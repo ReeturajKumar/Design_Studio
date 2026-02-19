@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-background: #000000;
+  --color-foreground: #FFFFFF;
+  --color-brand: #4E5928;
+  --color-brand-muted: #4E59281a;
+  --color-accent: #4C998E;
+  --color-surface: #1B1B1B;
+  --color-primary: #4E5928;
+  --color-primary-foreground: #FFFFFF;
+  --color-border: #FFFFFF1a;
+  --color-card: #1B1B1B;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-brand selection:text-black;
+  }
+
+  button,
+  [role="button"] {
+    @apply cursor-pointer;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    filter: blur(80px);
+  }
+
+  50% {
+    opacity: 0.6;
+    filter: blur(100px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 8s ease-in-out infinite;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, oklch(100% 0 0 / 15%) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 90%);
+}
+
+.glass-card {
+  @apply bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl;
+}
