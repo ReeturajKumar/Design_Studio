@@ -6,11 +6,11 @@ export default function FeaturedWork() {
     <section className="bg-black pt-2 pb-2 md:pt-4 md:pb-4 lg:pt-6 lg:pb-6 px-6 md:px-12 lg:px-20 overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
         <motion.div 
-          initial={{ opacity: 0, y: 200, scale: 0.8, filter: "blur(10px)" }}
+          initial={{ opacity: 0, y: 80, scale: 0.8, filter: "blur(10px)" }}
           whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: false, amount: "some" }}
           transition={{ 
-            duration: 1.8, 
+            duration: 1.6, 
             ease: [0.22, 1, 0.36, 1] 
           }}
           className="relative rounded-[32px] md:rounded-[48px] lg:rounded-[64px] overflow-hidden will-change-transform transform-gpu"
