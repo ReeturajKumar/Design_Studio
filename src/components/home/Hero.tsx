@@ -110,11 +110,6 @@ export default function Hero() {
                 variants={bgVariants}
                 className="absolute top-0 left-full -translate-x-[1px] w-6 h-6 md:w-16 md:h-16 pointer-events-none z-30"
               >
-                <div className="w-full h-full bg-[#3D441E]/80 backdrop-blur-3xl relative">
-                  <div className="absolute inset-0 bg-[#A2B64E] 
-                    rounded-tl-[24px] md:rounded-tl-[48px] lg:rounded-tl-[56px] 
-                    border-t border-l border-white/10 -translate-x-[1px] -translate-y-[1px]"></div>
-                </div>
               </motion.div>
             </div>
           </div>
