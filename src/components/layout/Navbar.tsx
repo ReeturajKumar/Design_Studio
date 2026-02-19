@@ -81,7 +81,7 @@ export default function Navbar() {
               className="hidden md:flex items-center gap-3 md:gap-4"
             >
               <Button variant="outline" className={`hidden lg:flex rounded-full border-[#1B1B1B] text-[#1B1B1B] font-bold transition-all duration-500 ${
-                isScrolled ? "px-6 h-10 border-[#1B1B1B]/30" : "px-8 md:px-10 h-12 md:h-14 bg-transparent hover:bg-[#1B1B1B] hover:text-white"
+                isScrolled ? "px-6 h-10 border-[#1B1B1B]/30 text-white" : "px-8 md:px-10 h-12 md:h-14 bg-transparent hover:bg-[#1B1B1B] hover:text-white"
               }`}>
                 Account
               </Button>
